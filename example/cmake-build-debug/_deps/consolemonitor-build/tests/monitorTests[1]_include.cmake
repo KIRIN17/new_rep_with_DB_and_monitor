@@ -1,5 +1,0 @@
-if(EXISTS "C:/Prog/1Monitor/example/cmake-build-debug/_deps/consolemonitor-build/tests/monitorTests[1]_tests.cmake")
-  include("C:/Prog/1Monitor/example/cmake-build-debug/_deps/consolemonitor-build/tests/monitorTests[1]_tests.cmake")
-else()
-  add_test(monitorTests_NOT_BUILT monitorTests_NOT_BUILT)
-endif()

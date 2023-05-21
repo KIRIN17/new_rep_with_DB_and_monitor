@@ -1,3 +1,0 @@
-C:/Prog/1Monitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate.dir
-C:/Prog/1Monitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/edit_cache.dir
-C:/Prog/1Monitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/rebuild_cache.dir
