@@ -1,0 +1,137 @@
+\hypertarget{classBaseCommand}{}\doxysection{Base\+Command Class Reference}
+\label{classBaseCommand}\index{BaseCommand@{BaseCommand}}
+
+
+{\ttfamily \#include $<$Base\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Base\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBaseCommand__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBaseCommand_a63841df8410760ee10701df753dc5a8c}\label{classBaseCommand_a63841df8410760ee10701df753dc5a8c}} 
+{\bfseries Base\+Command} (Commands\+List command\+Type\+\_\+, std\+::ostream \&ostream\+\_\+)
+\item 
+const char $\ast$ \mbox{\hyperlink{classBaseCommand_aec807bbf1f09965369b88fbfb2ca5ea9}{process\+Query}} (\mbox{\hyperlink{classParser}{Parser}} \&parser)
+\item 
+Commands\+List \mbox{\hyperlink{classBaseCommand_a6ec7e918a5481cc8ff27df4a442efdf5}{get\+Command\+Type}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}{check\+And\+Assemble}} (\mbox{\hyperlink{classParser}{Parser}} \&parser)=0
+\item 
+virtual int \mbox{\hyperlink{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}{run}} ()=0
+\item 
+void \mbox{\hyperlink{classBaseCommand_a9687256e8a96bcca6424cb168cdfbce2}{print\+Assembly\+Error}} (const char $\ast$info)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classBaseCommand_a21b30fdbcd9c48d51d4223883ad336f4}{help}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classBaseCommand_a583af765f272386dffe83de9c37d8832}{ostream}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс образует базу для дальнейших классов-\/команд, хранит общие методы обработки введенной строки 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}\label{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}} 
+\index{BaseCommand@{BaseCommand}!checkAndAssemble@{checkAndAssemble}}
+\index{checkAndAssemble@{checkAndAssemble}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{checkAndAssemble()}{checkAndAssemble()}}
+{\footnotesize\ttfamily virtual const char$\ast$ Base\+Command\+::check\+And\+Assemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParser}{Parser}} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Метод проверяет аргументы из объекта парсера и собирает их в соответствующие команде переменные 
+\begin{DoxyParams}{Parameters}
+{\em parser} & объект парсера, содержащий массивы полученных аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сообщение об ошибке (при ошибке) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSqueeze_a4eea326ef90adb2a763a6a9c6bf0f81d}{Squeeze}}, \mbox{\hyperlink{classMove_a406266e8af9cf5535202c983e602dbb7}{Move}}, \mbox{\hyperlink{classInit_a262c5a259b915a1f0f4845fb3954c473}{Init}}, \mbox{\hyperlink{classFull_adebe4ebbb1463ed7ad15c88a011344c9}{Full}}, \mbox{\hyperlink{classEnter_aa337955d539cd0e15b3f0eb3cbf2223e}{Enter}}, \mbox{\hyperlink{classEmpty_a6dd0d9fa7118109aa262ca949a47a702}{Empty}}, \mbox{\hyperlink{classDel_aa80a19b5606b6a025505a179e608bad0}{Del}}, and \mbox{\hyperlink{classCopy_ab751cf68127385cd89d2f6b4b198f647}{Copy}}.
+
+\mbox{\Hypertarget{classBaseCommand_a6ec7e918a5481cc8ff27df4a442efdf5}\label{classBaseCommand_a6ec7e918a5481cc8ff27df4a442efdf5}} 
+\index{BaseCommand@{BaseCommand}!getCommandType@{getCommandType}}
+\index{getCommandType@{getCommandType}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{getCommandType()}{getCommandType()}}
+{\footnotesize\ttfamily Commands\+List Base\+Command\+::get\+Command\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Возвращает тип команды \begin{DoxyReturn}{Returns}
+тип команды 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBaseCommand_a21b30fdbcd9c48d51d4223883ad336f4}\label{classBaseCommand_a21b30fdbcd9c48d51d4223883ad336f4}} 
+\index{BaseCommand@{BaseCommand}!help@{help}}
+\index{help@{help}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily std\+::ostream \& Base\+Command\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Выводит в сохраненный поток вывода информацию о команде \begin{DoxyReturn}{Returns}
+Сохраненный поток вывода 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBaseCommand_a9687256e8a96bcca6424cb168cdfbce2}\label{classBaseCommand_a9687256e8a96bcca6424cb168cdfbce2}} 
+\index{BaseCommand@{BaseCommand}!printAssemblyError@{printAssemblyError}}
+\index{printAssemblyError@{printAssemblyError}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{printAssemblyError()}{printAssemblyError()}}
+{\footnotesize\ttfamily void Base\+Command\+::print\+Assembly\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Выводит сообщение об ошибке при сборке объекта команды 
+\begin{DoxyParams}{Parameters}
+{\em info} & дополнительное сообщение \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBaseCommand_aec807bbf1f09965369b88fbfb2ca5ea9}\label{classBaseCommand_aec807bbf1f09965369b88fbfb2ca5ea9}} 
+\index{BaseCommand@{BaseCommand}!processQuery@{processQuery}}
+\index{processQuery@{processQuery}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{processQuery()}{processQuery()}}
+{\footnotesize\ttfamily const char $\ast$ Base\+Command\+::process\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParser}{Parser}} \&}]{parser }\end{DoxyParamCaption})}
+
+Метод обрабатывает, устанавливает аргументы команды из строки запроса и исполняет команду 
+\begin{DoxyParams}{Parameters}
+{\em parser} & объект парсера обработавший запрос \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сообщение об ошибке (при ошибке) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}\label{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}} 
+\index{BaseCommand@{BaseCommand}!run@{run}}
+\index{run@{run}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual int Base\+Command\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Метод запускает соответствующую команде функцию ФС \begin{DoxyReturn}{Returns}
+Код ошибки или void в зависимости от команды 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSqueeze_ae80e22d690cd458f601456ea83485bf5}{Squeeze}}, \mbox{\hyperlink{classMove_aa3b6f3049fca69bc5692a11671659ef8}{Move}}, \mbox{\hyperlink{classInit_a1dc0c4053eecd41c830b654fec3617c6}{Init}}, \mbox{\hyperlink{classFull_af1727e5fdc20a4a886f46fa0fbaaa6b3}{Full}}, \mbox{\hyperlink{classEnter_a524c964a09051cc435fe5fe617179196}{Enter}}, \mbox{\hyperlink{classEmpty_a1e2fc2a3569e6b911ef6a074f2b33e2e}{Empty}}, \mbox{\hyperlink{classDel_a8083bd403dd43f4d22cbd68deb8fd821}{Del}}, and \mbox{\hyperlink{classCopy_a9ca7b3ea09730cb6c4eb9c1038258fb6}{Copy}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBaseCommand_a583af765f272386dffe83de9c37d8832}\label{classBaseCommand_a583af765f272386dffe83de9c37d8832}} 
+\index{BaseCommand@{BaseCommand}!ostream@{ostream}}
+\index{ostream@{ostream}!BaseCommand@{BaseCommand}}
+\doxysubsubsection{\texorpdfstring{ostream}{ostream}}
+{\footnotesize\ttfamily std\+::ostream\& Base\+Command\+::ostream\hspace{0.3cm}{\ttfamily [protected]}}
+
+Поток для вывода сообщений 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Base\+Command.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Base\+Command.\+cpp\end{DoxyCompactItemize}

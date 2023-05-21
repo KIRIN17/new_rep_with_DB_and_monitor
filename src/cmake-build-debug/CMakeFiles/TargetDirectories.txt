@@ -1,0 +1,12 @@
+C:/Prog/1Monitor/src/cmake-build-debug/CMakeFiles/monitor.dir
+C:/Prog/1Monitor/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/commands/CMakeFiles/commands_base.dir
+C:/Prog/1Monitor/src/cmake-build-debug/commands/CMakeFiles/edit_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/commands/CMakeFiles/rebuild_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/utils/CMakeFiles/monitor_utils.dir
+C:/Prog/1Monitor/src/cmake-build-debug/utils/CMakeFiles/edit_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/utils/CMakeFiles/rebuild_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/CommonFunctions/CMakeFiles/monitor_common.dir
+C:/Prog/1Monitor/src/cmake-build-debug/CommonFunctions/CMakeFiles/edit_cache.dir
+C:/Prog/1Monitor/src/cmake-build-debug/CommonFunctions/CMakeFiles/rebuild_cache.dir

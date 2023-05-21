@@ -1,0 +1,11 @@
+<map id="BaseCommand" name="BaseCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="245,5,367,32"/>
+<area shape="rect" id="node2" href="$classCopy.html" title=" " alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node3" href="$classDel.html" title=" " alt="" coords="84,80,128,107"/>
+<area shape="rect" id="node4" href="$classEmpty.html" title=" " alt="" coords="153,80,217,107"/>
+<area shape="rect" id="node5" href="$classEnter.html" title=" " alt="" coords="241,80,297,107"/>
+<area shape="rect" id="node6" href="$classFull.html" title=" " alt="" coords="321,80,366,107"/>
+<area shape="rect" id="node7" href="$classInit.html" title=" " alt="" coords="390,80,433,107"/>
+<area shape="rect" id="node8" href="$classMove.html" title=" " alt="" coords="457,80,515,107"/>
+<area shape="rect" id="node9" href="$classSqueeze.html" title=" " alt="" coords="539,80,617,107"/>
+</map>

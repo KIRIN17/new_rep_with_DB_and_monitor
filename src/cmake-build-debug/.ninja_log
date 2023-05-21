@@ -1,0 +1,11 @@
+# ninja log v5
+67	1639	7062304672947398	utils/CMakeFiles/monitor_utils.dir/utilFunctions.obj	546c5c3a00bd86a0
+85	1898	7062304673097362	CommonFunctions/CMakeFiles/monitor_common.dir/CommonFunctions.obj	a17a2316053c80a6
+18	2006	7062304676621744	CMakeFiles/monitor.dir/MonitorInput.obj	f6feaea895b721f9
+33	2050	7062304677071771	commands/CMakeFiles/commands_base.dir/BaseCommand.obj	67fe810ed18811c9
+1899	2192	7062304677511802	CommonFunctions/libmonitor_common.a	1e07fc3466c9fa86
+1891	2389	7062304679484950	utils/libmonitor_utils.a	9195c819df53b9ba
+3	3184	7062304688419244	CMakeFiles/monitor.dir/MonitorOutput.obj	d72d54c623887167
+50	4512	7062304701681288	commands/CMakeFiles/commands_base.dir/Parser.obj	10da158e10970910
+4512	4732	7062304703911674	commands/libcommands_base.a	9fb196c58afa94a8
+4732	4934	7062304705925451	libmonitor.a	62cac1296463c109

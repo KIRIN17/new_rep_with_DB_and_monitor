@@ -1,0 +1,44 @@
+\hypertarget{classCommandFactory}{}\doxysection{Command\+Factory Class Reference}
+\label{classCommandFactory}\index{CommandFactory@{CommandFactory}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommandFactory_ac31cdcf058989c9f45fb228908530d46}\label{classCommandFactory_ac31cdcf058989c9f45fb228908530d46}} 
+{\bfseries Command\+Factory} (const \mbox{\hyperlink{classCommandFactory}{Command\+Factory}} \&)=delete
+\item 
+\mbox{\Hypertarget{classCommandFactory_aef7d48f0667a472ad414c58df984d4d0}\label{classCommandFactory_aef7d48f0667a472ad414c58df984d4d0}} 
+{\bfseries Command\+Factory} (\mbox{\hyperlink{classCommandFactory}{Command\+Factory}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classCommandFactory_a8e0ff32b7fa5c8135ee0cf4900dbe4e1}\label{classCommandFactory_a8e0ff32b7fa5c8135ee0cf4900dbe4e1}} 
+{\footnotesize template$<$class ... Args$>$ }\\std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBaseCommand}{Base\+Command}} $>$ {\bfseries get\+Command} (const std\+::string \&command\+String, Args ...args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class ... Args$>$ }\\static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBaseCommand}{Base\+Command}} $>$ \mbox{\hyperlink{classCommandFactory_ab92dd176548acf149b96d51f34692ae3}{get\+Command}} (const std\+::string \&command\+String, Args... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommandFactory_ab92dd176548acf149b96d51f34692ae3}\label{classCommandFactory_ab92dd176548acf149b96d51f34692ae3}} 
+\index{CommandFactory@{CommandFactory}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!CommandFactory@{CommandFactory}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classBaseCommand}{Base\+Command}}$>$ Command\+Factory\+::get\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{command\+String,  }\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Фабричный метод создает объект команды из строки запроса 
+\begin{DoxyParams}{Parameters}
+{\em command\+Query} & строка запроса, целиком состоящая из символов команды \\
+\hline
+{\em ostream} & поток вывода для создания объекта команды \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+указатель на объект команды 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Command\+Factory.\+h\end{DoxyCompactItemize}

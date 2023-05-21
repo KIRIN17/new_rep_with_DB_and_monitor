@@ -1,0 +1,158 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "commands",
+					"jsonFile" : "directory-commands-Debug-6b103cb0dbe5299c73bd.json",
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "commands",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "utils",
+					"jsonFile" : "directory-utils-Debug-bb33f781d987d5385f78.json",
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "utils",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "CommonFunctions",
+					"jsonFile" : "directory-CommonFunctions-Debug-8e0035b8e3822ccda005.json",
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "CommonFunctions",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Monitor",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "commands",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Monitor_utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "CommonFunction",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "commands_base::@f2315f53a35462b60184",
+					"jsonFile" : "target-commands_base-Debug-32eee47851bcbc5baa4a.json",
+					"name" : "commands_base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "monitor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-monitor-Debug-f1083c8e5ebc826919fa.json",
+					"name" : "monitor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "monitor_common::@e2c5d47632597851269c",
+					"jsonFile" : "target-monitor_common-Debug-3a2c5461567458671dce.json",
+					"name" : "monitor_common",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "monitor_utils::@c810615cce0f7acb82dc",
+					"jsonFile" : "target-monitor_utils-Debug-6739d7ad0ce075eb9683.json",
+					"name" : "monitor_utils",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Prog/1Monitor/src/cmake-build-debug",
+		"source" : "C:/Prog/1Monitor/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

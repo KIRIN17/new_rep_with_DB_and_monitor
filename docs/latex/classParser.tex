@@ -1,0 +1,116 @@
+\hypertarget{classParser}{}\doxysection{Parser Class Reference}
+\label{classParser}\index{Parser@{Parser}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParser_a2b52216ec0f3711a99884a3f0c9f4ff2}{Parser}} (const std\+::string \&input)
+\item 
+\mbox{\Hypertarget{classParser_a1fbdd4e315c4d7d17e8d1bef12de2098}\label{classParser_a1fbdd4e315c4d7d17e8d1bef12de2098}} 
+const key\+Args\+\_\+t \& {\bfseries get\+Key\+Args} () const
+\item 
+\mbox{\Hypertarget{classParser_a1474e14886199dbbb80f2d17fa7060b9}\label{classParser_a1474e14886199dbbb80f2d17fa7060b9}} 
+key\+Args\+\_\+t \& {\bfseries get\+Key\+Args} ()
+\item 
+\mbox{\Hypertarget{classParser_ac7291db4db2a742e428da167ebfd65d1}\label{classParser_ac7291db4db2a742e428da167ebfd65d1}} 
+const pos\+Args\+\_\+t \& {\bfseries get\+Pos\+Args} () const
+\item 
+\mbox{\Hypertarget{classParser_ad5af02c08cc9d1f86fd3a94903b5c39d}\label{classParser_ad5af02c08cc9d1f86fd3a94903b5c39d}} 
+pos\+Args\+\_\+t \& {\bfseries get\+Pos\+Args} ()
+\item 
+\mbox{\Hypertarget{classParser_ae6f9a734f3678137547b992139bc98cb}\label{classParser_ae6f9a734f3678137547b992139bc98cb}} 
+const bool\+Args\+\_\+t \& {\bfseries get\+Bool\+Args} () const
+\item 
+\mbox{\Hypertarget{classParser_a6fe15e1c79823ed1cc79aba1f9f45cf5}\label{classParser_a6fe15e1c79823ed1cc79aba1f9f45cf5}} 
+bool\+Args\+\_\+t \& {\bfseries get\+Bool\+Args} ()
+\item 
+\mbox{\Hypertarget{classParser_ae61a0a4f43dbed9a284c0b4cdbbd53c7}\label{classParser_ae61a0a4f43dbed9a284c0b4cdbbd53c7}} 
+const std\+::string \& {\bfseries get\+Command} () const
+\item 
+\mbox{\Hypertarget{classParser_af59219e176903159c1c01dd75422f6c1}\label{classParser_af59219e176903159c1c01dd75422f6c1}} 
+std\+::string \& {\bfseries get\+Command} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classParser_a364a0c87e2ccacab12b4643caedf4085}{parse\+Word}} (const std\+::string \&input, size\+\_\+t \&index)
+\item 
+static key\+Args\+\_\+t\+::key\+\_\+type \mbox{\hyperlink{classParser_a9eb2174c0ba2afd4f64ff32ecb96fa82}{parse\+Key}} (const std\+::string \&input, size\+\_\+t \&index)
+\item 
+static key\+Args\+\_\+t\+::mapped\+\_\+type \mbox{\hyperlink{classParser_a10c1837afcacbaea240c3ed79c92d214}{parse\+Key\+Value}} (const std\+::string \&input, size\+\_\+t \&index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParser_a2b52216ec0f3711a99884a3f0c9f4ff2}\label{classParser_a2b52216ec0f3711a99884a3f0c9f4ff2}} 
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Конструктор обрабатывает введенную строку и получает из нее команду и массив аргументов 
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParser_a9eb2174c0ba2afd4f64ff32ecb96fa82}\label{classParser_a9eb2174c0ba2afd4f64ff32ecb96fa82}} 
+\index{Parser@{Parser}!parseKey@{parseKey}}
+\index{parseKey@{parseKey}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parseKey()}{parseKey()}}
+{\footnotesize\ttfamily key\+Args\+\_\+t\+::key\+\_\+type Parser\+::parse\+Key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input,  }\item[{size\+\_\+t \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Выделяет ключ из строки 
+\begin{DoxyParams}{Parameters}
+{\em input} & входная строка с ключом \\
+\hline
+{\em index} & индекс символа содержащего первый символ \textquotesingle{}-\/\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+выделенный ключ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a10c1837afcacbaea240c3ed79c92d214}\label{classParser_a10c1837afcacbaea240c3ed79c92d214}} 
+\index{Parser@{Parser}!parseKeyValue@{parseKeyValue}}
+\index{parseKeyValue@{parseKeyValue}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parseKeyValue()}{parseKeyValue()}}
+{\footnotesize\ttfamily key\+Args\+\_\+t\+::mapped\+\_\+type Parser\+::parse\+Key\+Value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input,  }\item[{size\+\_\+t \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Выделяет значение ключа из строки и перевод его в целочисленное значение 
+\begin{DoxyParams}{Parameters}
+{\em input} & входная строка со значением \\
+\hline
+{\em index} & индекс символа содержащего первый символ значения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+выделенное значение 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & при переполнении целочисленного типа или при невозможности преобразовать строку в число \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classParser_a364a0c87e2ccacab12b4643caedf4085}\label{classParser_a364a0c87e2ccacab12b4643caedf4085}} 
+\index{Parser@{Parser}!parseWord@{parseWord}}
+\index{parseWord@{parseWord}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parseWord()}{parseWord()}}
+{\footnotesize\ttfamily std\+::string Parser\+::parse\+Word (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input,  }\item[{size\+\_\+t \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Функция выделяет слово начинающееся с данного индекса в данной строке 
+\begin{DoxyParams}{Parameters}
+{\em input} & данная строка \\
+\hline
+{\em index} & данный индекс \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+подстрока 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/utils/Parser.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/utils/Parser.\+cpp\end{DoxyCompactItemize}

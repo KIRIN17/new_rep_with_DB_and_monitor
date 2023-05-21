@@ -1,0 +1,5 @@
+if(EXISTS "C:/Prog/1Monitor/tests/cmake-build-debug/monitorTests[1]_tests.cmake")
+  include("C:/Prog/1Monitor/tests/cmake-build-debug/monitorTests[1]_tests.cmake")
+else()
+  add_test(monitorTests_NOT_BUILT monitorTests_NOT_BUILT)
+endif()

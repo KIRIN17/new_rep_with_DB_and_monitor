@@ -1,0 +1,73 @@
+\hypertarget{classMove}{}\doxysection{Move Class Reference}
+\label{classMove}\index{Move@{Move}}
+
+
+Inheritance diagram for Move\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classMove__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Move\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classMove__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMove_ae1df05800cfe69cc3857c2bb2eb7da5f}\label{classMove_ae1df05800cfe69cc3857c2bb2eb7da5f}} 
+{\bfseries Move} (std\+::ostream \&ostream\+\_\+)
+\item 
+const char $\ast$ \mbox{\hyperlink{classMove_a406266e8af9cf5535202c983e602dbb7}{check\+And\+Assemble}} (\mbox{\hyperlink{classParser}{Parser}} \&parser) final
+\item 
+int \mbox{\hyperlink{classMove_aa3b6f3049fca69bc5692a11671659ef8}{run}} () final
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMove_a406266e8af9cf5535202c983e602dbb7}\label{classMove_a406266e8af9cf5535202c983e602dbb7}} 
+\index{Move@{Move}!checkAndAssemble@{checkAndAssemble}}
+\index{checkAndAssemble@{checkAndAssemble}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{checkAndAssemble()}{checkAndAssemble()}}
+{\footnotesize\ttfamily const char $\ast$ Move\+::check\+And\+Assemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParser}{Parser}} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод проверяет аргументы из объекта парсера и собирает их в соответствующие команде переменные 
+\begin{DoxyParams}{Parameters}
+{\em parser} & объект парсера, содержащий массивы полученных аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сообщение об ошибке (при ошибке) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}{Base\+Command}}.
+
+\mbox{\Hypertarget{classMove_aa3b6f3049fca69bc5692a11671659ef8}\label{classMove_aa3b6f3049fca69bc5692a11671659ef8}} 
+\index{Move@{Move}!run@{run}}
+\index{run@{run}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Move\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод запускает соответствующую команде функцию ФС \begin{DoxyReturn}{Returns}
+Код ошибки или void в зависимости от команды 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}{Base\+Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Move.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Move.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+init -b 2 -s 16 label1
+init --blocks 123 --segments 21 "label 2"
+help
+full
+move "file1" "file2"
+move "file1"

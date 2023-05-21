@@ -1,0 +1,43 @@
+\hypertarget{classMonitor}{}\doxysection{Monitor Class Reference}
+\label{classMonitor}\index{Monitor@{Monitor}}
+
+
+{\ttfamily \#include $<$Monitor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMonitor_a0f05c76304b942b475b841d61e4ee473}\label{classMonitor_a0f05c76304b942b475b841d61e4ee473}} 
+{\bfseries Monitor} (std\+::istream \&istream\+\_\+, std\+::ostream \&ostream\+\_\+)
+\item 
+bool \mbox{\hyperlink{classMonitor_ad996134839914ef20885323544eefd99}{process\+Input}} ()
+\item 
+void \mbox{\hyperlink{classMonitor_a81666ecd4a8db05fd3090f7e47eca6ed}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс реализует монитор, принимает строки запросов из входного потока, передает выходную информацию в выходной поток Для автоматизированного запуска можно использовать метод run, для ручного управления -\/ методом process\+Input для принятие строки и ее обработки, show\+Prompt чтобы показать готовность к принятию ввода 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonitor_ad996134839914ef20885323544eefd99}\label{classMonitor_ad996134839914ef20885323544eefd99}} 
+\index{Monitor@{Monitor}!processInput@{processInput}}
+\index{processInput@{processInput}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily bool Monitor\+::process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Метод принимает запрос из входного потока и обрабатывает его Для окончания ввода подходит команда EXIT или символ EOF \begin{DoxyReturn}{Returns}
+false если пользователь ввел команду окончания ввода, true otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMonitor_a81666ecd4a8db05fd3090f7e47eca6ed}\label{classMonitor_a81666ecd4a8db05fd3090f7e47eca6ed}} 
+\index{Monitor@{Monitor}!run@{run}}
+\index{run@{run}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Monitor\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Метод сам управляет принятием ввода из консоли, выводит предложение на ввод 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/Monitor.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/Monitor.\+cpp\end{DoxyCompactItemize}

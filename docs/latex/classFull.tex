@@ -1,0 +1,73 @@
+\hypertarget{classFull}{}\doxysection{Full Class Reference}
+\label{classFull}\index{Full@{Full}}
+
+
+Inheritance diagram for Full\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classFull__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Full\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classFull__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFull_aa6d05c54a054283e1a0a6bd68886531a}\label{classFull_aa6d05c54a054283e1a0a6bd68886531a}} 
+{\bfseries Full} (std\+::ostream \&ostream\+\_\+)
+\item 
+const char $\ast$ \mbox{\hyperlink{classFull_adebe4ebbb1463ed7ad15c88a011344c9}{check\+And\+Assemble}} (\mbox{\hyperlink{classParser}{Parser}} \&parser) final
+\item 
+int \mbox{\hyperlink{classFull_af1727e5fdc20a4a886f46fa0fbaaa6b3}{run}} () final
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFull_adebe4ebbb1463ed7ad15c88a011344c9}\label{classFull_adebe4ebbb1463ed7ad15c88a011344c9}} 
+\index{Full@{Full}!checkAndAssemble@{checkAndAssemble}}
+\index{checkAndAssemble@{checkAndAssemble}!Full@{Full}}
+\doxysubsubsection{\texorpdfstring{checkAndAssemble()}{checkAndAssemble()}}
+{\footnotesize\ttfamily const char $\ast$ Full\+::check\+And\+Assemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParser}{Parser}} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод проверяет аргументы из объекта парсера и собирает их в соответствующие команде переменные 
+\begin{DoxyParams}{Parameters}
+{\em parser} & объект парсера, содержащий массивы полученных аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сообщение об ошибке (при ошибке) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}{Base\+Command}}.
+
+\mbox{\Hypertarget{classFull_af1727e5fdc20a4a886f46fa0fbaaa6b3}\label{classFull_af1727e5fdc20a4a886f46fa0fbaaa6b3}} 
+\index{Full@{Full}!run@{run}}
+\index{run@{run}!Full@{Full}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Full\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод запускает соответствующую команде функцию ФС \begin{DoxyReturn}{Returns}
+Код ошибки или void в зависимости от команды 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}{Base\+Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Full.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Full.\+cpp\end{DoxyCompactItemize}

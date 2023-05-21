@@ -1,0 +1,17 @@
+-> init -b 2 -s 16 label1
+init command executed, blocks: "2", segments: "16", label: "label1", inner: Example
+-> init --blocks 123 --segments 21 "label 2"
+init command executed, blocks: "123", segments: "21", label: "label 2", inner: Example
+-> help
+monitor help
+-> full
+Command full doesn't exist
+monitor help
+-> move "file1" "file2"
+Command move doesn't exist
+monitor help
+-> move "file1"
+Command move doesn't exist
+monitor help
+-> 
+Exit message

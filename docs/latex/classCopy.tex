@@ -1,0 +1,73 @@
+\hypertarget{classCopy}{}\doxysection{Copy Class Reference}
+\label{classCopy}\index{Copy@{Copy}}
+
+
+Inheritance diagram for Copy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classCopy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Copy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classCopy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCopy_aa7e3d8f6fbf42b6e95a3f89712d99c4b}\label{classCopy_aa7e3d8f6fbf42b6e95a3f89712d99c4b}} 
+{\bfseries Copy} (std\+::ostream \&ostream\+\_\+)
+\item 
+const char $\ast$ \mbox{\hyperlink{classCopy_ab751cf68127385cd89d2f6b4b198f647}{check\+And\+Assemble}} (\mbox{\hyperlink{classParser}{Parser}} \&parser) final
+\item 
+int \mbox{\hyperlink{classCopy_a9ca7b3ea09730cb6c4eb9c1038258fb6}{run}} () final
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCopy_ab751cf68127385cd89d2f6b4b198f647}\label{classCopy_ab751cf68127385cd89d2f6b4b198f647}} 
+\index{Copy@{Copy}!checkAndAssemble@{checkAndAssemble}}
+\index{checkAndAssemble@{checkAndAssemble}!Copy@{Copy}}
+\doxysubsubsection{\texorpdfstring{checkAndAssemble()}{checkAndAssemble()}}
+{\footnotesize\ttfamily const char $\ast$ Copy\+::check\+And\+Assemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParser}{Parser}} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод проверяет аргументы из объекта парсера и собирает их в соответствующие команде переменные 
+\begin{DoxyParams}{Parameters}
+{\em parser} & объект парсера, содержащий массивы полученных аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сообщение об ошибке (при ошибке) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a4ee7959ef9910fdf3bf1600443521c5f}{Base\+Command}}.
+
+\mbox{\Hypertarget{classCopy_a9ca7b3ea09730cb6c4eb9c1038258fb6}\label{classCopy_a9ca7b3ea09730cb6c4eb9c1038258fb6}} 
+\index{Copy@{Copy}!run@{run}}
+\index{run@{run}!Copy@{Copy}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Copy\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Метод запускает соответствующую команде функцию ФС \begin{DoxyReturn}{Returns}
+Код ошибки или void в зависимости от команды 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBaseCommand_a03b09e370e265bfa0b5a03f698aa4a22}{Base\+Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Copy.\+h\item 
+/media/\+Acer/\+Users/zavgm/\+Projects/monitor/monitor/commands/Copy.\+cpp\end{DoxyCompactItemize}
