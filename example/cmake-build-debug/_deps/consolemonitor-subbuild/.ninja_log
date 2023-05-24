@@ -1,0 +1,37 @@
+# ninja log v5
+1	113	7063586026788211	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-mkdir	f62ef10e8b2f8f51
+1	113	7063586026788211	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-mkdir	f62ef10e8b2f8f51
+9737	9870	7066328416350336	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-build	d6fc2344cd2eb00a
+1	9431	0	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-update	2750aae8d793df3d
+114	4336	7063586069018872	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-download	52ddeaa690efed05
+1	9431	0	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-update	2750aae8d793df3d
+114	4336	7063586069018872	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-download	52ddeaa690efed05
+9432	9595	7066328413599978	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-patch	66d9c3665ba3d448
+9432	9595	7066328413599978	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-patch	66d9c3665ba3d448
+9595	9736	7066328415009960	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-configure	677ae0a4607298d7
+10160	10341	7066328421060343	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-done	61fa35e517c9e905
+9595	9736	7066328415009960	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-configure	677ae0a4607298d7
+9737	9870	7066328416350336	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-build	d6fc2344cd2eb00a
+10160	10341	7066328421060343	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-done	61fa35e517c9e905
+9870	10020	7066328417850311	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-install	a02f219218958da0
+9870	10020	7066328417850311	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-install	a02f219218958da0
+10021	10159	7066328419240309	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-test	9dcafcf176b7239d
+10021	10159	7066328419240309	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-test	9dcafcf176b7239d
+10160	10341	7066328421060343	CMakeFiles/consolemonitor-populate-complete	61fa35e517c9e905
+10160	10341	7066328421060343	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate-complete	61fa35e517c9e905
+11	5366	0	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-update	2750aae8d793df3d
+11	5366	0	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-update	2750aae8d793df3d
+5386	5525	7066472462056455	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-patch	66d9c3665ba3d448
+5386	5525	7066472462056455	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-patch	66d9c3665ba3d448
+5525	5642	7066472463233092	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-configure	677ae0a4607298d7
+5525	5642	7066472463233092	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-configure	677ae0a4607298d7
+5643	5759	7066472464386681	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-build	d6fc2344cd2eb00a
+5643	5759	7066472464386681	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-build	d6fc2344cd2eb00a
+5760	5877	7066472465586264	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-install	a02f219218958da0
+5760	5877	7066472465586264	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-install	a02f219218958da0
+5877	5983	7066472466654168	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-test	9dcafcf176b7239d
+5877	5983	7066472466654168	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-test	9dcafcf176b7239d
+5984	6152	7066472468328711	CMakeFiles/consolemonitor-populate-complete	61fa35e517c9e905
+5984	6152	7066472468328711	consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-done	61fa35e517c9e905
+5984	6152	7066472468328711	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate-complete	61fa35e517c9e905
+5984	6152	7066472468328711	C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-done	61fa35e517c9e905

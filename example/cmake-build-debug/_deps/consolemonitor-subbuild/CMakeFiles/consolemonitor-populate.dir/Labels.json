@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/CMakeFiles/consolemonitor-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-build.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-download.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-install.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-test.rule"
+		},
+		{
+			"file" : "C:/Prog/1Students/ConsoleMonitor-main (1)/ConsoleMonitor/example/cmake-build-debug/_deps/consolemonitor-subbuild/consolemonitor-populate-prefix/src/consolemonitor-populate-stamp/consolemonitor-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"consolemonitor-populate"
+		],
+		"name" : "consolemonitor-populate"
+	}
+}
