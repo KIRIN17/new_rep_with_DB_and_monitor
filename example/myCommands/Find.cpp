@@ -20,15 +20,18 @@ std::string Find::run() {
     istringstream is(line);
 
     auto condition = ParseCondition(is);
-    auto predicate = [condition](const Date &date, const string &event) {
-        return condition->Evaluate(date, event);
-    };
+    if(condition != nullptr){
+        auto predicate = [condition](const Date &date, const string &event) {
+            return condition->Evaluate(date, event);
+        };
 
-    const auto entries = FindIf(predicate,database->get_ALL_DATA());
-    for (const auto &entry : entries) {
-        cout << entry << endl;
+        const auto entries = FindIf(predicate,database->get_ALL_DATA());
+        for (const auto &entry : entries) {
+            cout << entry << endl;
+        }
+        cout << "Found " << entries.size() << " entries" << endl;
     }
-    cout << "Found " << entries.size() << " entries" << endl;
+
     return "";
 }
 

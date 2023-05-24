@@ -22,12 +22,15 @@ std::string Del::run() {
     istringstream is(line);
 
     auto condition = ParseCondition(is);
-    auto predicate = [condition](const Date &date, const string &event) {
-        return condition->Evaluate(date, event);
-    };
+    if(condition != nullptr){
+        auto predicate = [condition](const Date &date, const string &event) {
+            return condition->Evaluate(date, event);
+        };
 
-    int count = database->RemoveIf(predicate);
-    cout << "Removed " << count << " entries" << endl;
+        int count = database->RemoveIf(predicate);
+        cout << "Removed " << count << " entries" << endl;
+    }
+
 
     return "";
 }

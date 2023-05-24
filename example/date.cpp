@@ -55,14 +55,23 @@ Date ParseDate(std::istream& stream){
     int y,m,d;
     if(stream >> y && stream.get() == '-' && stream >> m && stream.get() == '-' && stream >> d && (stream.peek() == ' ' || stream.peek() == EOF)){
         if(((m < 1 || m > 12) && (d < 1 || d > 31)) || (m < 1 || m > 12)){
-            throw std::runtime_error("Month value is invalid: " + std::to_string(m));
+            //throw std::runtime_error("Month value is invalid: " + std::to_string(m));
+            std::cout<<"Month value is invalid: " << std::to_string(m);
+            return {-1,-1,-1};
+            //return stream;
         }else{
             if(d < 1 || d > 31){
-                throw std::runtime_error("Day value is invalid: " + std::to_string(d));
+                //throw std::runtime_error("Day value is invalid: " + std::to_string(d));
+                std::cout << "Day value is invalid: " << std::to_string(d);
+                return {-1,-1,-1};
             }else{
                 return {y,m,d};
             }
         }
-    }else
-        throw std::runtime_error("Wrong date format1: ");
+    }else{
+        std::cout << "Wrong date format\n";
+        return {-1,-1,-1};
+    }
+
+
 }

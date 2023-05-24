@@ -26,14 +26,16 @@ std::string Add::run() {
     istringstream is(line);
 
     const auto date = ParseDate(is);
-    const auto event = ParseEvent(is);
+    if(date.GetDay() != -1 && date.GetMonth() != -1 && date.GetYear() != -1){
+        const auto event = ParseEvent(is);
 
-
-    if(!database->get_ALL_DATA_SET().count(date) || !database->get_ALL_DATA_SET().at(date).count(event)){
-        database->set_to_ALL_DATA(date,event);
-        database->set_to_ALL_DATA_SET(date,event);
-    }
-    return helpMessage;
+        if(!database->get_ALL_DATA_SET().count(date) || !database->get_ALL_DATA_SET().at(date).count(event)){
+            database->set_to_ALL_DATA(date,event);
+            database->set_to_ALL_DATA_SET(date,event);
+        }
+    }else
+        return helpMessage;
+    return "";
 }
 
 std::string Add::help() {

@@ -3,31 +3,35 @@
 #include <map>
 
 
-
-
 template <class It> shared_ptr<Node> ParseComparison(It& current, It end) {
     if (current == end) {
-        throw logic_error("Expected column name: date or event");
+        //throw logic_error("Expected column name: date or event");
+        cout << "Expected column name: date or event";
+        return nullptr;
     }
 
     Token& column = *current;
     if (column.type != TokenType::COLUMN) {
-        throw logic_error("Expected column name: date or event");
+        cout << "Expected column name: date or event";
+        return nullptr;
     }
     ++current;
 
     if (current == end) {
-        throw logic_error("Expected comparison operation");
+        cout << "Expected comparison operation";
+        return nullptr;
     }
 
     Token& op = *current;
     if (op.type != TokenType::COMPARE_OP) {
-        throw logic_error("Expected comparison operation");
+        cout << "Expected comparison operation";
+        return nullptr;
     }
     ++current;
 
     if (current == end) {
-        throw logic_error("Expected right value of comparison");
+        cout << "Expected right value of comparison";
+        return nullptr;
     }
 
     Comparison cmp;
@@ -44,7 +48,8 @@ template <class It> shared_ptr<Node> ParseComparison(It& current, It end) {
     } else if (op.value == "!=") {
         cmp = Comparison::NotEqual;
     } else {
-        throw logic_error("Unknown comparison token: " + op.value);
+        cout << "Unknown comparison token: " << op.value;
+        return nullptr;
     }
 
     const string& value = current->value;
@@ -70,7 +75,9 @@ shared_ptr<Node> ParseExpression(It& current, It end, unsigned precedence) {
         ++current; // consume '('
         left = ParseExpression(current, end, 0u);
         if (current == end || current->type != TokenType::PAREN_RIGHT) {
-            throw logic_error("Missing right paren");
+            //throw logic_error("Missing right paren");
+            cout << "Missing right paren";
+            return nullptr;
         }
         ++current; // consume ')'
     } else {
@@ -83,7 +90,8 @@ shared_ptr<Node> ParseExpression(It& current, It end, unsigned precedence) {
 
     while (current != end && current->type != TokenType::PAREN_RIGHT) {
         if (current->type != TokenType::LOGICAL_OP) {
-            throw logic_error("Expected logic operation");
+            cout << "Expected logic operation";
+            return nullptr;
         }
 
         const auto logical_operation = current->value == "AND" ? LogicalOperation::And
@@ -105,16 +113,20 @@ shared_ptr<Node> ParseExpression(It& current, It end, unsigned precedence) {
 
 shared_ptr<Node> ParseCondition(istream& is) {
     auto tokens = Tokenize(is);
-    auto current = tokens.begin();
-    auto top_node = ParseExpression(current, tokens.end(), 0u);
+    if(!tokens.empty()){
+        auto current = tokens.begin();
+        auto top_node = ParseExpression(current, tokens.end(), 0u);
 
-    if (!top_node) {
-        top_node = make_shared<EmptyNode>();
+        if (!top_node) {
+            top_node = make_shared<EmptyNode>();
+        }
+        if (current != tokens.end()) {
+            //throw logic_error("Unexpected tokens after condition");
+            cout << "Unexpected tokens after condition";
+            return nullptr;
+        }
+        return top_node;
     }
-
-    if (current != tokens.end()) {
-        throw logic_error("Unexpected tokens after condition");
-    }
-
-    return top_node;
+    else
+        return nullptr;
 }

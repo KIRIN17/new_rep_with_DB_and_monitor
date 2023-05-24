@@ -10,7 +10,7 @@ private:
     Database* database;
     std::string inner;
 
-    static constexpr char helpMessage[] = "";
+    static constexpr char helpMessage[] = "Type \"help\" if necessary";
 protected:
     std::string help() override;
 public:

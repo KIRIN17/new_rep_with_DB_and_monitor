@@ -1,3 +1,0 @@
-C:/Prog/1Monitor/example/myCommands/cmake-build-debug/CMakeFiles/mycommands.dir
-C:/Prog/1Monitor/example/myCommands/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Prog/1Monitor/example/myCommands/cmake-build-debug/CMakeFiles/rebuild_cache.dir
