@@ -2,7 +2,8 @@
 #include "../database.h"
 #include "Last.h"
 #include <iostream>
-#include "condition_parser.h"
+//#include "condition_parser.h"
+#include "../tokens_and_another/condition_parser.h"
 
 Last::Last(std::string string,Database* database_) : inner(string),database(database_) {}
 

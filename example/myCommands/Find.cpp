@@ -2,7 +2,7 @@
 #include "../database.h"
 #include "Find.h"
 #include <iostream>
-#include "condition_parser.h"
+#include "../tokens_and_another/condition_parser.h"//"condition_parser.h"
 
 Find::Find(std::string string,Database* database_) : inner(string),database(database_) {}
 

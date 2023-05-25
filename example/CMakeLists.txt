@@ -13,7 +13,7 @@ FetchContent_Declare(ConsoleMonitor
 FetchContent_MakeAvailable(ConsoleMonitor)
 
 # configure executable
-add_executable(example example.cpp date.cpp database.cpp)
+add_executable(example example.cpp database.cpp)
 # make it compile to output folder
 set_target_properties(example PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/output")
 
@@ -24,3 +24,10 @@ target_link_libraries(example PUBLIC monitor)
 add_subdirectory(myCommands)
 # link it with our custom commands
 target_link_libraries(example PUBLIC mycommands)
+
+add_subdirectory(tokens_and_another)
+target_link_libraries(example PUBLIC Nodes)
+
+add_subdirectory(date)
+target_link_libraries(example PUBLIC Dates)
+
