@@ -12,24 +12,39 @@ std::string Del::getQuery() {
 }
 
 std::string Del::checkAndAssemble(Parser &parser) {
-    return ""; // always correct
-}
 
-std::string Del::run() {
+    string for_condition = parser.getKeyArgs()["c"];
 
-    string line;
-    getline(cin, line);
-    istringstream is(line);
+    auto condition = ParseCondition(for_condition);
+    string result = "";
 
-    auto condition = ParseCondition(is);
-    if(condition != nullptr){
+    if (condition != nullptr) {
         auto predicate = [condition](const Date &date, const string &event) {
             return condition->Evaluate(date, event);
         };
 
-        int count = database->RemoveIf(predicate);
-        cout << "Removed " << count << " entries" << endl;
+        int count = 0;//RemoveIf(predicate, database);
+        result = "Removed " + to_string(count) + " entries\n";
     }
+
+    return result; // always correct
+}
+
+std::string Del::run() {
+
+//    string line;
+//    getline(cin, line);
+//    istringstream is(line);
+//
+//    auto condition = ParseCondition(is);
+//    if(condition != nullptr){
+//        auto predicate = [condition](const Date &date, const string &event) {
+//            return condition->Evaluate(date, event);
+//        };
+//
+//        int count = database->RemoveIf(predicate);
+//        cout << "Removed " << count << " entries" << endl;
+//    }
 
 
     return "";

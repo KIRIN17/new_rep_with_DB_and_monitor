@@ -1,5 +1,10 @@
 #include "date.h"
 
+Date::Date() {
+    year = 0;
+    month = 0;
+    day = 0;
+}
 
 Date::Date(int y,int m,int d){
     year = y;
@@ -10,6 +15,12 @@ Date::Date(int y,int m,int d){
 int Date::GetYear() const{return year;}
 int Date::GetMonth() const{return month;}
 int Date::GetDay() const{return day;}
+
+void Date::SetData(int y, int m, int d){
+    year = y;
+    month = m;
+    day = d;
+}
 
 std::string Date::ToString() const{
     std::stringstream ss;
@@ -72,6 +83,4 @@ Date ParseDate(std::istream& stream){
         std::cout << "Wrong date format\n";
         return {-1,-1,-1};
     }
-
-
 }

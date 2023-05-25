@@ -111,7 +111,7 @@ shared_ptr<Node> ParseExpression(It& current, It end, unsigned precedence) {
     return left;
 }
 
-shared_ptr<Node> ParseCondition(istream& is) {
+shared_ptr<Node> ParseCondition(string is) {
     auto tokens = Tokenize(is);
     if(!tokens.empty()){
         auto current = tokens.begin();

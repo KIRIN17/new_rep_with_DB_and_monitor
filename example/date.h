@@ -9,11 +9,14 @@ using namespace std;
 
 class Date {
 public:
+    Date();
     Date(int y,int m,int d);
 
     int GetYear() const;
     int GetMonth() const;
     int GetDay() const;
+
+    void SetData(int y, int m, int d);
 
     std::string ToString() const;
 

@@ -9,6 +9,8 @@ class Add : public BaseCommand {
 private:
     Database* database;
     std::string inner;
+    Date date;
+    string event;
 
     static constexpr char helpMessage[] = "Type \"help\" if necessary";
 protected:

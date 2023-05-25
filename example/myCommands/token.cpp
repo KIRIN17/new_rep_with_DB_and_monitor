@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-vector<Token> Tokenize(istream& cl) {
+vector<Token> Tokenize(string cl_) {
+    stringstream cl(cl_);
     vector<Token> tokens;
 
     char c;

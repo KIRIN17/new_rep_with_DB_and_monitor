@@ -19,4 +19,5 @@ struct Token {
     const TokenType type;
 };
 
-vector<Token> Tokenize(istream& cl);
+//vector<Token> Tokenize(istream& cl);
+vector<Token> Tokenize(string cl_);

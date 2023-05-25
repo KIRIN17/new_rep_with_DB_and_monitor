@@ -3,28 +3,28 @@
 #include <vector>
 #include "../database.h"
 
-template <typename T> vector<string> FindIf(T predicate,std::map<Date,std::vector<std::string>> ALL_DATA){
-    vector<string> res;
-
-    for(const pair<Date,vector<string>>& p : ALL_DATA){
-        Date tmp = p.first;
-        size_t size_1 = res.size();
-
-        copy_if(p.second.begin(),p.second.end(),back_inserter(res),[predicate,tmp](const string& s){
-            return predicate(tmp,s);
-        });
-
-        size_t size_2 = res.size();
-
-        if(size_1 != size_2){//добавление данной даты к каждому новому добавленному событию
-            for (int i = size_1; i < size_2; ++i) {
-                res[i] = tmp.ToString() + " " + res[i];
-            }
-        }
-
-    }
-    return res;
-}
+//template <typename T> vector<string> FindIf(T predicate,std::map<Date,std::vector<std::string>> ALL_DATA){
+//    vector<string> res;
+//
+//    for(const pair<Date,vector<string>>& p : ALL_DATA){
+//        Date tmp = p.first;
+//        size_t size_1 = res.size();
+//
+//        copy_if(p.second.begin(),p.second.end(),back_inserter(res),[predicate,tmp](const string& s){
+//            return predicate(tmp,s);
+//        });
+//
+//        size_t size_2 = res.size();
+//
+//        if(size_1 != size_2){//добавление данной даты к каждому новому добавленному событию
+//            for (int i = size_1; i < size_2; ++i) {
+//                res[i] = tmp.ToString() + " " + res[i];
+//            }
+//        }
+//
+//    }
+//    return res;
+//}
 
 //template <typename T> int RemoveIf(T predicate,) {//в предикат нужно передавать параметры?
 //    int count = 0;
