@@ -23,7 +23,8 @@ std::string Del::checkAndAssemble(Parser &parser) {
             return condition->Evaluate(date, event);
         };
 
-        int count = 0;//RemoveIf(predicate, database);
+        //int count = RemoveIf(predicate, database);
+        int count = database->RemoveIf(predicate);
         result = "Removed " + to_string(count) + " entries\n";
     }
 
