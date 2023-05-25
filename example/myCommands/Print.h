@@ -5,6 +5,10 @@
 #include "../database.h"
 #include "BaseCommand.h"
 
+std::string ToStringDB(Database* database);
+
+std::string ToStringVector(const Date& date,std::string nums,const Database* database);
+
 class Print : public BaseCommand {
 private:
     Database* database;

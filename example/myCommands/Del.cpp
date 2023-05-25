@@ -33,21 +33,6 @@ std::string Del::checkAndAssemble(Parser &parser) {
 
 std::string Del::run() {
 
-//    string line;
-//    getline(cin, line);
-//    istringstream is(line);
-//
-//    auto condition = ParseCondition(is);
-//    if(condition != nullptr){
-//        auto predicate = [condition](const Date &date, const string &event) {
-//            return condition->Evaluate(date, event);
-//        };
-//
-//        int count = database->RemoveIf(predicate);
-//        cout << "Removed " << count << " entries" << endl;
-//    }
-
-
     return "";
 }
 

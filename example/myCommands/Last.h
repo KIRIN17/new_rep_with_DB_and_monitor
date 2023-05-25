@@ -7,6 +7,7 @@
 
 class Last : public BaseCommand {
 private:
+    Date date;
     Database* database;
     std::string inner;
 
